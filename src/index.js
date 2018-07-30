@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault()
     // console.log(event.target[0].value)
     imageAdapter.postComment(event.target[0].value).then(localizeImage)
+    event.target[0].value = ""
   })
 
 

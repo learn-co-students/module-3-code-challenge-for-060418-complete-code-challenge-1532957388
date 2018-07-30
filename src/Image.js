@@ -14,9 +14,7 @@ function localizeAndRenderImage(){
 function localizeImage(){
     imageAdapter.showImage().then(res => {
         renderlocalImage(res.url, res.like_count)
-        
         renderComments(res.comments)
-        
     })
 }
 
@@ -26,7 +24,7 @@ function renderlocalImage(imgURL, like_count){
 }
 
 
-
+// Abandoned class constructors here
 
 // class Image {
 
