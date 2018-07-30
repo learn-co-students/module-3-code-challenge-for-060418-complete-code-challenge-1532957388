@@ -3,7 +3,6 @@
 
 let commentBox = document.getElementById('comments')
 
-
 // functional logic
 
 function renderComments(commentArr){

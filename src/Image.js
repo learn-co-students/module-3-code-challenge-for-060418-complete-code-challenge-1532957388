@@ -6,7 +6,6 @@ allImages = []
 let imageDisplay = document.getElementById('image')
 let likesCounter = document.getElementById('likes')
 
-
 // functional logic
 
 function localizeAndRenderImage(){
@@ -30,10 +29,6 @@ function optLikeRender(){
     let newNum = parseInt(likesCounter.innerText) + 1
     likesCounter.innerText = newNum
 }
-
-
-
-
 
 // Abandoned class constructors here
 

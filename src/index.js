@@ -10,9 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   likeButton.addEventListener('click', function(){
     console.log('clicked')
     optLikeRender();
-    imageAdapter.postLike()
-    // this optimistically renders technically, even though the post request is sent first
-    
+    imageAdapter.postLike()  
   })
   
   theForm.addEventListener('submit', function(event){
@@ -22,13 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
     imageAdapter.postComment(event.target[0].value)
     event.target[0].value = ""
   })
-
-  // functions to run
-  
   
   localizeImage()
 
 })
 
-// refactored from pessimistically rendered to optimistically rendered
 

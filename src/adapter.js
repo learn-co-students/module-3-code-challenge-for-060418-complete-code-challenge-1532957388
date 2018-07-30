@@ -8,11 +8,9 @@ const likeURL = `https://randopic.herokuapp.com/likes/`
 
 const commentsURL = `https://randopic.herokuapp.com/comments/`
 
-//adapter object
-
 let imageAdapter = generateAdapter(imageURL)
 
-
+//adapter object
 
 function generateAdapter(apiLink){
 
@@ -53,5 +51,4 @@ function generateAdapter(apiLink){
             return fetch(commentsURL, postConfig).then(res => res.json())
         }
     }
-
 }
