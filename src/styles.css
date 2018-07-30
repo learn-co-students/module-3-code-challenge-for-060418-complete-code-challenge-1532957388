@@ -1,0 +1,62 @@
+.container {
+  align-content: center;
+  width: 400px;
+  height 800px;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+  border-style: dotted;
+  border-color:    #8585e0;
+  border-width: 7px;
+
+
+}
+
+.comment {
+  text-align: left;
+}
+
+body {
+  background-color:  #e6f1ff
+}
+
+h3 {
+  color:  #00b386;
+}
+
+.button {
+  background-color: #b3b3ff;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.likebutton {
+  background-color:  #b3b3ff;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.submitbutton {
+  background-color:  #99ffe6;
+    border: none;
+    color: blue;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+p {
+  color: #3359cc;
+}
