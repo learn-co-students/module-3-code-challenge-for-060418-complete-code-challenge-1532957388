@@ -1,10 +1,13 @@
 
+// variable definitions
+
 allImages = []
 
 let imageDisplay = document.getElementById('image')
 let likesCounter = document.getElementById('likes')
 
 
+// functional logic
 
 function localizeAndRenderImage(){
     localizeImage().then(renderlocalImage)
@@ -22,6 +25,9 @@ function renderlocalImage(imgURL, like_count){
     imageDisplay.setAttribute('src', `${imgURL}`)
     likesCounter.innerText = `${like_count}`
 }
+
+
+
 
 
 // Abandoned class constructors here
