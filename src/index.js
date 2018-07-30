@@ -9,14 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
   
   likeButton.addEventListener('click', function(){
     console.log('clicked')
-    imageAdapter.postLike().then(localizeImage)
+    optLikeRender();
+    imageAdapter.postLike()
+    // this optimistically renders technically, even though the post request is sent first
     
   })
   
   theForm.addEventListener('submit', function(event){
     event.preventDefault()
     // console.log(event.target[0].value)
-    imageAdapter.postComment(event.target[0].value).then(optCommentRender(event.target[0].value))
+    optCommentRender(event.target[0].value)
+    imageAdapter.postComment(event.target[0].value)
     event.target[0].value = ""
   })
 
@@ -27,5 +30,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 })
 
-// this currently has comments optimistically rendered and likes pessimistically rendered
+// refactored from pessimistically rendered to optimistically rendered
 

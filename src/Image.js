@@ -26,6 +26,11 @@ function renderlocalImage(imgURL, like_count){
     likesCounter.innerText = `${like_count}`
 }
 
+function optLikeRender(){
+    let newNum = parseInt(likesCounter.innerText) + 1
+    likesCounter.innerText = newNum
+}
+
 
 
 
