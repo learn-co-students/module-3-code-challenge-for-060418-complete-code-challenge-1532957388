@@ -1,12 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  const imageId = 1 //Enter your assigned imageId here
+  
+  localizeImage()
 
-  const imageURL = `https://randopic.herokuapp.com/images/${imageId}`
+  let likeButton =  document.getElementById('like_button')
+  let theForm = document.getElementById('comment_form')
 
-  const likeURL = `https://randopic.herokuapp.com/likes/`
+  likeButton.addEventListener('click', function(){
+    console.log('clicked')
+    imageAdapter.postLike().then(localizeImage)
+    
+  })
 
-  const commentsURL = `https://randopic.herokuapp.com/comments/`
+  theForm.addEventListener('submit', function(event){
+    event.preventDefault()
+    // console.log(event.target[0].value)
+    imageAdapter.postComment(event.target[0].value).then(localizeImage)
+  })
 
 
 
