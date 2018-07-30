@@ -8,9 +8,9 @@ let likesCounter = document.getElementById('likes')
 
 // functional logic
 
-function localizeAndRenderImage(){
-    localizeImage().then(renderlocalImage)
-}
+// function localizeAndRenderImage(){
+//     localizeImage().then(renderlocalImage)
+// }
 
 
 function localizeImage(){
